@@ -1,0 +1,31 @@
+.category-content {
+    width: 100%;
+}
+
+.category-content__holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4em;
+    gap: 10em;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.category-transitioning .category-content__holder,
+.category-display:not(.category-selected) .category-content__holder {
+    opacity: 0;
+    transition: none;
+}
+
+.category-content__holder input {
+    width: 350px;
+    aspect-ratio: 16 / 9;
+    outline: 5px solid white;
+    border-radius: 5px;    
+    transition: all .2s ease-in-out;
+}
+
+.category-content__holder input:hover {
+    transform: scale(1.1);
+}
