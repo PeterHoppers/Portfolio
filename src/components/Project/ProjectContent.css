@@ -1,0 +1,14 @@
+.project-content {
+    font-size: 1.75em;
+}
+
+.project-content a {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.project-content__carousel-holder {    
+    width: 700px;
+    margin: auto;
+}

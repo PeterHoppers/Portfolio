@@ -24,6 +24,7 @@
     outline: 5px solid white;
     border-radius: 5px;    
     transition: all .2s ease-in-out;
+    background-color: darkgrey;
 }
 
 .category-content__holder input:hover {

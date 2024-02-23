@@ -3,6 +3,7 @@ import './CategoryDisplay.css';
 import { Categories} from '../../util.js';
 import CategoryButton from './CategoryButton';
 import CategoryContent from './CategoryContent.jsx';
+import ProjectDisplay from "../Project/ProjectDisplay.jsx";
 
 const CategoryState = Object.freeze({
     Open: 0,
@@ -15,6 +16,7 @@ function CategoryDisplay(props) {
     const [category, setCategory] = useState(Categories.Games);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [categoryDisplayState, setDisplayState] = useState(CategoryState.Closed);
+    const [projectDisplayed, setProject] = useState(null);
   
     const updateCategory = (selectedCategory) => {        
         if (selectedCategory == category && categoryDisplayState == CategoryState.Open) {
@@ -59,9 +61,11 @@ function CategoryDisplay(props) {
                     setIsTransitioning(false);
                 }}>
                 {Object.keys(Categories).map(category => {                    
-                    return <CategoryContent key={category} category={category}/>
+                    return <CategoryContent key={category} category={category} updateProject={setProject}/>
                 })}
             </div>
+            
+            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => setProject(null)}/>            
       </div>
     )
 }

@@ -1,6 +1,6 @@
 import "./CategoryContent.css";
 import ProjectButton from "../Project/ProjectButton";
-import Projects from "../../projects.js";
+import {Projects} from "../../projects.js";
 
 function CategoryContent(props) {
     return (
@@ -8,7 +8,7 @@ function CategoryContent(props) {
             <div className="category-content__holder">
                 {Projects.map(project => {
                     if (project.category.includes(props.category)) {
-                        return <ProjectButton key={"id"} imageSrc={project.coverArt}/>
+                        return <ProjectButton key={project.name + props.category} imageSrc={project.coverArt} projectSetter={() => props.updateProject(project)}/>
                     } else {
                         return;
                     }
