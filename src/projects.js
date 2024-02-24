@@ -76,6 +76,50 @@ const Projects = [
         "https://www.youtube.com/embed/fo_O2GgBYwI?si=LkqVP8tulU3Hiu8Y",
     ),
     new Project(
+        "AAA Online Courses",
+        "Front-end design and development for AAA's new online courses.",
+        [
+            Categories.Web
+        ],
+        "aaacourse.png",
+        [
+            new Thumbnail(
+                "aaacourse.png",
+                "Landing page when someone would enroll within the course and go through the modules."
+            ),
+            new Thumbnail(
+                "aaaregister.jpg",
+                "The registration page, which was in charge of displaying the correct prices depending what state and zipcode they lived in."
+            ),
+            new Thumbnail(
+                "aaaregister2.jpg",
+                "This part of the registration page highlights the need for all the front-end validation of information."
+            )    
+        ],
+    ),
+    new Project(
+        "Associations' Online Catalogs & Events",
+        "Working directly with various associations across the country to create their online catalog and help them host online events.",
+        [
+            Categories.Web
+        ],
+        "emco.png",
+        [            
+            new Thumbnail(
+                "asfcmap.png",
+                "An HTML interactive map created through supplied images that navigated the vistor to different parts of the site for an event."
+            ),
+            new Thumbnail(
+                "ascrs.png",
+                "ASCRS' Education Catalog where users could navigate through their varying courses and programs."
+            ),
+            new Thumbnail(
+                "emco.png",
+                "The display of the EMCO catalog, showing users the information needed about various different courses."
+            )
+        ],
+    ),
+    new Project(
         "Outsiders' Gallery",
         "An interactive experience that gives artists new opportunities to exhibit and sell their work.",
         [
