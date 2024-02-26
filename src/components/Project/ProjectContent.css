@@ -1,5 +1,7 @@
 .project-content {
     font-size: 1.75em;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .project-content a {
@@ -11,4 +13,64 @@
 .project-content__carousel-holder {    
     width: 700px;
     margin: auto;
+}
+
+/* Overriding Carousel CSS */
+.project-content .carousel .slide {
+    display: flex;
+    justify-content: center;
+}
+
+.project-content .carousel .carousel-status {
+    font-size: 16px;
+    z-index: 100;
+}
+
+.project-content .carousel.carousel-slider .control-arrow {
+    width: 8%;
+    background: rgba(0,0,0,0.25);
+}
+
+.project-content .carousel .control-arrow:before, 
+.project-content .carousel.carousel-slider .control-arrow:before {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+.project-content .carousel .control-next.control-arrow:before {
+    border-left: 24px solid #fff;
+}
+
+.project-content .carousel .control-prev.control-arrow:before {
+    border-right: 24px solid #fff;
+}
+
+.project-content .carousel .control-dots .dot {
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.9);
+}
+
+.project-content .carousel .thumb {
+    border-color: #333;
+    height: 60px;
+}
+
+.project-content .carousel .thumb.selected, 
+.project-content .carousel .thumb:hover {
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.project-content .carousel .thumb img {
+    vertical-align: middle;
+}
+
+.project-content .carousel .thumbs-wrapper {
+    margin: 0 1em;
+}
+
+.project-content .carousel .slide .legend {
+    opacity: 1;
+    font-size: .5em;
+    padding-bottom: 15px;
+    bottom: 2px;
 }

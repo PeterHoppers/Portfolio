@@ -20,6 +20,7 @@ function ProjectContent(props) {
                                 project.thumbnails.map((thumbnail) => {
                                     return <div key={thumbnail.key}>
                                                 <img src={`/Portfolio/Thumbnails/${project.name}/${thumbnail.src}`} alt={`${thumbnail.alt}`}/>
+                                                <p className="legend">{`${thumbnail.alt}`}</p>
                                            </div>                                        
                                 })
                             }

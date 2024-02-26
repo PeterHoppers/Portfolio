@@ -26,10 +26,13 @@
 @media(max-width: 768px) {
     .category-display {
         height: 250px;
-    }
+    }    
     .category-holder {
         grid-auto-flow: row;
         min-height: 250px !important;
+    }
+    .category-selected .category-holder {
+        min-height: 285px !important;
     }
 }
 

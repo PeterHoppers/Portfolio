@@ -33,11 +33,23 @@ const Projects = [
         [
             new Thumbnail(
                 "Screenshots_1.png",
-                "Tossing Bags on the Basic Level"
+                "The first level was a standard cornhole set-up, but the levels would only get more complicated as the game went on."
+            ),            
+            new Thumbnail(
+                "Screenshots_3.png",
+                "Every level had the player having 8 bags that they could throw and try to gain points with."
             ),
             new Thumbnail(
-                "Screemshots_2.png",
-                "End level display"
+                "Screenshots_2.png",
+                "When the player ran out of bags, it would show their score and reward them with trophies depending on how well they did."
+            ),
+            new Thumbnail(
+                "Screenshots_4.png",
+                "Here's a collection of trophies a player has earned while playing the game. There are 30 levels in total to play."
+            ),
+            new Thumbnail(
+                "Screenshots_5.png",
+                "Earning trophies would then unlock bonues and more levels for the player to attempt to master."
             )            
         ],
         null,
@@ -50,7 +62,7 @@ const Projects = [
         [
             Categories.VR
         ],
-        "playback-main-menu.png",
+        "headsetNavigation.png",
         null,
         "https://www.youtube.com/embed/2NwT-TVMUvE?si=qGpScgfD0WkpuA-s",
     ),
@@ -71,7 +83,7 @@ const Projects = [
             Categories.Web,
             Categories.VR
         ],
-        "admin_video_playing.png",
+        "guidedPlayback.png",
         null,
         "https://www.youtube.com/embed/fo_O2GgBYwI?si=LkqVP8tulU3Hiu8Y",
     ),
@@ -81,11 +93,11 @@ const Projects = [
         [
             Categories.Web
         ],
-        "aaacourse.png",
+        "aaaCover.png",
         [
             new Thumbnail(
                 "aaacourse.png",
-                "Landing page when someone would enroll within the course and go through the modules."
+                "A view of the landing page when someone would enroll within the course and go through the modules."
             ),
             new Thumbnail(
                 "aaaregister.jpg",
@@ -98,12 +110,12 @@ const Projects = [
         ],
     ),
     new Project(
-        "Associations' Online Catalogs & Events",
+        "Online Catalogs & Events",
         "Working directly with various associations across the country to create their online catalog and help them host online events.",
         [
             Categories.Web
         ],
-        "emco.png",
+        "associationCover.png",
         [            
             new Thumbnail(
                 "asfcmap.png",
@@ -120,12 +132,12 @@ const Projects = [
         ],
     ),
     new Project(
-        "Outsiders' Gallery",
+        "Outsider's Art Galleries",
         "An interactive experience that gives artists new opportunities to exhibit and sell their work.",
         [
             Categories.VR
         ],
-        "outsiders1.png",
+        "outsiders3.png",
         null,
         "https://www.youtube.com/embed/bSOF01sCaGA?si=bREw1xSm0MYKpceC",
     ),
@@ -139,7 +151,7 @@ const Projects = [
         [
             new Thumbnail(
                 "movers.gif",
-                "Showing the visual of the levels and how the controls were scrambled."
+                "Everytime the player pressed a button to move, the relationship between which button would move which direction would be scrambled."
             ),
             new Thumbnail(
                 "endlessscramble2.png",
@@ -151,7 +163,7 @@ const Projects = [
             )    
         ],
         null,
-        "Click here to Play!",
+        "Click Here to Play!",
         "https://peterhoppers.github.io/Endless-Scramble/"
     ),
     new Project(
@@ -164,15 +176,15 @@ const Projects = [
         [
             new Thumbnail(
                 "charged2.png",
-                "Player firing a negative ion through positive sources"
+                "The player would fire a negative ion to have it reach the red swirl with green triangles in the bottom right corner."
             ),
             new Thumbnail(
                 "charged3.png",
-                "Player now has the ability to positive source around the level"
+                "To do this, the player would fire the ion into positive source that would pull the ion towards its center."
             ), 
             new Thumbnail(
                 "charged4.png",
-                "Player firing the ion at a negative source, causing the icon to be pushed away"
+                "Later on, negative sources would be added, causing the icon to be pushed away instead."
             ),
         ],
         null,
@@ -202,7 +214,57 @@ const Projects = [
         ],
         null,
         "Click Here to Download!",
+        "https://drive.google.com/file/d/1rpw5ogG90MOca7r1WJ1BOJQXN9-DSSGT/view"
+    ),
+    new Project(
+        "Diesel Thunder",
+        "An online third-person shooter where players battled each other in tanks.",
+        [
+            Categories.Games
+        ],
+        "dieselthunder.png",
+        [
+            new Thumbnail(
+                "dieselthunder2.png",
+                "The basic layout of what the game looked like in the player chose a red-color tank."
+            ),
+            new Thumbnail(
+                "hud.png",
+                "Two players battling over an item that has spawned that recovers a tank's health."
+            ), 
+            new Thumbnail(
+                "basetest.png",
+                "There are multiple types of tanks to choose from: each with their own health, speed, and weapon types."
+            ),
+        ],
+        null,
+        "Click Here to Download!",
         "https://drive.google.com/file/d/1hzIDzOfFkXlR7PpnCnGBWD2a0lmGIeTZ/view"
+    ),
+    new Project(
+        "Inclusion",
+        "A branching narrative focused on fitting in at school and pixelated art style.",
+        [
+            Categories.Games
+        ],
+        "inclusion.png",
+        [
+            new Thumbnail(
+                "inclusion2.png",
+                "Bitsy was a javascript based game engine that focused around creating non-linear stories through pixel art."
+            ),
+            new Thumbnail(
+                "inclusion3.png",
+                "Different colored sprites were used to highlight the interactivity of said sprites."
+            ), 
+            new Thumbnail(
+                "inclusion4.png",
+                "I wanted to include more fuctionality than the game engine would allow, sparking me to modify the engine itself."
+            ),
+        ],
+        null,
+        "Click Here to Play!",
+        "https://sly-merc.neocities.org/inclusion3"
     ) 
 ];
 

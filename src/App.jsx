@@ -1,10 +1,15 @@
 import './App.css';
 import CategoryDisplay from './components/Category/CategoryDisplay';
+import linkedInLogo from './assets/socials/linkedIn.svg';
+
+//<img src={linkedInLogo} alt="LinkedIn"/>
 
 function App() {
   return (
     <>
-
+      <header>
+        
+      </header>
       <div className='bio-holder'>
         <div className='left-bio'>
           <h1>Peter Hoppe</h1>

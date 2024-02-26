@@ -44,3 +44,15 @@
   justify-content: center;
   font-size: large;
 }
+
+
+@media(max-width: 768px) {
+  .bio-holder {
+    flex-direction: column;
+  }
+}
+
+
+header {
+  position: absolute;
+}

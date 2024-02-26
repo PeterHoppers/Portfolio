@@ -3,7 +3,8 @@
     height: 65%;
     margin-top: auto;
     transition: height .75s cubic-bezier(.17,1.68,.7,1.01);
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .category:hover {
