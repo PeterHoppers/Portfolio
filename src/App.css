@@ -3,25 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
+  display: flex;
+  margin: auto;
 }
 
 .bio-holder {
@@ -29,16 +12,16 @@
   gap: 5em;
 }
 
-.left-bio {
-  width: 50%;
+.bio-holder > div {
+  flex: 1 1 0px;
 }
 
 .left-bio h1 {
   font-size: 140px;
+  margin: 0;
 }
 
 .right-bio {
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,13 +29,8 @@
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 1080px) {
   .bio-holder {
     flex-direction: column;
   }
-}
-
-
-header {
-  position: absolute;
 }

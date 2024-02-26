@@ -1,0 +1,31 @@
+header {
+    top: 0;
+    left: 0;
+    position: absolute;  
+    width: 100%;
+    height: 50px;
+    background-color: teal;
+}
+
+.header__socials {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    padding-right: 1em;
+}
+  
+header a {  
+    display: flex;
+    padding: 5px;
+    aspect-ratio: 1 / 1;
+}
+
+header img:hover {
+    transform: scale(1.25);
+} 
+
+header a,
+header img {
+    max-height: 100%;
+}
