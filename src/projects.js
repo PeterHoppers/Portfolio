@@ -24,37 +24,16 @@ class Thumbnail {
 const Projects = [
     new Project(
         "VR Cornhole Training",
-        "",
+        "Experience cornhole like you never have before! Throw bags in 30 different levels with varying conditions that will keep you on your toes.",
         [
             Categories.Games,
             Categories.VR
         ],
         "cornhole.png",
-        [
-            new Thumbnail(
-                "Screenshots_1.png",
-                "The first level was a standard cornhole set-up, but the levels would only get more complicated as the game went on."
-            ),            
-            new Thumbnail(
-                "Screenshots_3.png",
-                "Every level had the player having 8 bags that they could throw and try to gain points with."
-            ),
-            new Thumbnail(
-                "Screenshots_2.png",
-                "When the player ran out of bags, it would show their score and reward them with trophies depending on how well they did."
-            ),
-            new Thumbnail(
-                "Screenshots_4.png",
-                "Here's a collection of trophies a player has earned while playing the game. There are 30 levels in total to play."
-            ),
-            new Thumbnail(
-                "Screenshots_5.png",
-                "Earning trophies would then unlock bonues and more levels for the player to attempt to master."
-            )            
-        ],
         null,
+        "https://www.youtube.com/embed/yFyxGWWsaKk?si=1UazwdjFVde_AlRZ",
         "Click Here to View on the Meta Store!",
-        ""
+        "https://www.meta.com/experiences/7004532726309856/"
     ),
     new Project(
         "In-Headset Navigation",
@@ -193,7 +172,7 @@ const Projects = [
     ),
     new Project(
         "Creator Colosseum",
-        "Side-scrolling beat-em-up that got my face when the team needed me to lead.",
+        "Side-scrolling beat ‘em up that got my face when the team needed me to lead.",
         [
             Categories.Games
         ],

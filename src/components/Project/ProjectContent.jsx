@@ -11,7 +11,7 @@ function ProjectContent(props) {
     return (
         <div className="project-content">
             <h2>{project.name}</h2>
-            <p>{project.description}</p>
+            <p className='project-content__description'>{project.description}</p>
             {
                 project.thumbnails && 
                     <div className='project-content__carousel-holder'>

@@ -1,3 +1,7 @@
 .project-description {
     text-align: left;
 }
+
+.project-description__short-summary p{
+    margin: .1em;
+}
