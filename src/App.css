@@ -5,32 +5,5 @@
   text-align: center;
   display: flex;
   margin: auto;
-}
-
-.bio-holder {
-  display: flex;
-  gap: 5em;
-}
-
-.bio-holder > div {
-  flex: 1 1 0px;
-}
-
-.left-bio h1 {
-  font-size: 140px;
-  margin: 0;
-}
-
-.right-bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: large;
-}
-
-
-@media(max-width: 1080px) {
-  .bio-holder {
-    flex-direction: column;
-  }
+  padding-bottom: 0;
 }

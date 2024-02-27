@@ -1,7 +1,49 @@
 .project-description {
+    display: flex;
     text-align: left;
+    margin-top: 1em;
 }
 
-.project-description__short-summary p{
-    margin: .1em;
+.project-description__short-summary {
+    border-right: 3px solid white;
+    padding-right: 0.5em;
+}
+
+.project-description__short-summary p {
+    margin: .35em 0;
+}
+
+.project-description__roles {
+    padding-left: 1em;
+    font-size: .85em;
+}
+
+.project-description__roles h3 {
+    margin: 0;    
+    font-size: 1.5em;
+}
+
+.project-description__roles h4 {
+    margin: 1em 0 0;    
+    font-size: 1.25em;
+}
+
+@media(max-width: 768px) {
+    .project-description { 
+        flex-direction: column;
+    }
+
+    .project-description__short-summary {
+        border-right: 0;
+        border-bottom: 3px solid white;
+    }
+
+    .project-description__roles {
+        padding-left: 0;
+        padding-top: 1em;
+    }
+
+    .project-description__roles li {
+        margin-bottom: .5em;
+    }
 }

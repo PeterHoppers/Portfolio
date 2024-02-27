@@ -1,0 +1,61 @@
+.bio-holder {
+    display: flex;
+    gap: 5em;
+    padding-bottom: 100px;
+}
+
+.bio-holder > div {
+    flex: 1 1 0px;
+}
+
+.left-bio {
+    margin-top: 5em;
+}
+
+.left-bio h1 {
+    font-size: 160px;
+    margin: 0;
+    text-shadow: .1em .1em teal;
+}
+
+.right-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25em;
+}
+
+@media(max-width: 1080px) {
+    .bio-holder {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .left-bio h1 { 
+        font-size: 5em;
+        margin-top: 1em;
+    }
+
+    .left-bio {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .bio-holder {
+        font-size: .85em;
+        padding-bottom: 250px;
+    }
+}
+
+@media(max-width: 576px) {
+    .bio-holder {
+        font-size: .7em;
+    }
+
+    .left-bio h1 { 
+        font-size: 4em;
+        margin-top: 1em;
+    }
+}
+

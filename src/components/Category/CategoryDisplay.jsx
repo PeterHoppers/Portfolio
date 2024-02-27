@@ -32,6 +32,11 @@ function CategoryDisplay(props) {
         }
     }
 
+    const updateProject = (selectedProject) => {
+        setProject(selectedProject);
+        document.getElementsByClassName("category-display")[0].scrollTo(0, 0);
+    }
+
     let categoryDisplayClass = `category-display category-${category.toLowerCase()}`;
 
     if (categoryDisplayState == CategoryState.Open || categoryDisplayState == CategoryState.Opening) {
@@ -61,7 +66,7 @@ function CategoryDisplay(props) {
                     setIsTransitioning(false);
                 }}>
                 {Object.keys(Categories).map(category => {                    
-                    return <CategoryContent key={category} category={category} updateProject={setProject}/>
+                    return <CategoryContent key={category} category={category} updateProject={updateProject}/>
                 })}
             </div>
             

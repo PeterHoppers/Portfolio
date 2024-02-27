@@ -35,3 +35,10 @@
 .project-display__close-btn:focus {
     transform: scale(1.5);
 }
+
+@media(max-width: 768px) {
+    .project-display__close-btn {        
+        top: 1.5em;
+        right: 1.5em;
+    }
+}

@@ -176,7 +176,7 @@ const Projects = [
         [
             Categories.Games
         ],
-        "cc1.png",
+        "creatorCover.png",
         [
             new Thumbnail(
                 "cc2.png",
@@ -194,7 +194,15 @@ const Projects = [
         null,
         "Click Here to Download!",
         "https://drive.google.com/file/d/1rpw5ogG90MOca7r1WJ1BOJQXN9-DSSGT/view"
-    ),
+    )
+];
+
+export {
+    Project,
+    Projects
+};
+
+/* ,
     new Project(
         "Diesel Thunder",
         "An online third-person shooter where players battled each other in tanks.",
@@ -244,10 +252,4 @@ const Projects = [
         null,
         "Click Here to Play!",
         "https://sly-merc.neocities.org/inclusion3"
-    ) 
-];
-
-export {
-    Project,
-    Projects
-};
+    ) */

@@ -12,6 +12,11 @@
     margin-bottom: .25em;
 }
 
+.project-content iframe {
+    min-width: min(540px, 100%);
+    aspect-ratio: 16/9;
+}
+
 .project-content__description {
     margin: 0 0 1em;
 }
@@ -23,8 +28,14 @@
     color: aliceblue;
 }
 
-.project-content__carousel-holder {    
-    width: 700px;
+@media(max-width: 1200px) {
+    .project-content {        
+        font-size: 1.5em;
+    }
+}
+
+.project-content__carousel-holder {   
+    width: min(700px, 100%);
     margin: auto;
 }
 
@@ -79,6 +90,10 @@
 
 .project-content .carousel .thumbs-wrapper {
     margin: 0 1em;
+}
+
+.project-content .carousel .thumbs {
+    padding-left: 0;
 }
 
 .project-content .carousel .slide .legend {

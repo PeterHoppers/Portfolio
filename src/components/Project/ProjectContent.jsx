@@ -29,11 +29,11 @@ function ProjectContent(props) {
             }
             {
                 project.previewVideoURl &&
-                <iframe width="560" height="315" src={`${project.previewVideoURl}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe src={`${project.previewVideoURl}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             }
             {
                 project.viewText && 
-                    <a href={`${project.viewURL}`}>{`${project.viewText}`}</a>
+                    <a href={`${project.viewURL}`} target='_blank'>{`${project.viewText}`}</a>
             }
             <ProjectDescription projectName = {project.name}/>
         </div>
