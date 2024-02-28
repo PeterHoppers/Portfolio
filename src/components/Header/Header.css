@@ -21,6 +21,10 @@ header a {
     aspect-ratio: 1 / 1;
 }
 
+header img {    
+    transition: all .15s ease-in;
+}
+
 header img:hover {
     transform: scale(1.25);
 } 
