@@ -24,8 +24,8 @@ function ProjectDescription(props) {
                         <ul>
                             <li>Created a simple prototype within a week so that playtesters could highlight which activities were most fun as early on in development as possible</li>
                             <li>Implemented a modular system for different game systems so that new levels and mechanics could be developed without being coupled to old mechanics</li>
-                            <li>Modified assets found from the Unity store to allow them to properly integrate with each other and solve bugs that spawned along the way</li>
-                            <li>Coded a system where level values could be stores in a single JSON file to enable simple modification of trophy values and level descriptions</li>
+                            <li>Modified assets acquired from the Unity store to properly integrate them with each other and original code while solving bugs that spawned along the way</li>
+                            <li>Coded a system where level values could be stored in a single JSON file to enable simple modification of trophy values and level descriptions</li>
                         </ul>
                     </div>
                 </>

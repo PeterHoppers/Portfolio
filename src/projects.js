@@ -24,7 +24,7 @@ class Thumbnail {
 const Projects = [
     new Project(
         "VR Cornhole Training",
-        "Experience cornhole like you never have before! Throw bags in 30 different levels with varying conditions that will keep you on your toes.",
+        "Experience cornhole like you never have before! Throw bags in 30 different levels with varying conditions and earn trophies for high scores.",
         [
             Categories.Games,
             Categories.VR

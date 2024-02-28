@@ -28,6 +28,11 @@
     color: aliceblue;
 }
 
+.project-content a:hover,
+.project-content a:focus {
+    color: -webkit-link;
+}
+
 @media(max-width: 1200px) {
     .project-content {        
         font-size: 1.5em;
