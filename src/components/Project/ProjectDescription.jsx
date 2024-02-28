@@ -161,7 +161,7 @@ function ProjectDescription(props) {
             {projectName === "In-Headset Navigation" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, video.js, react</p>
+                        <p><b>Technology:</b> three.js, video.js, React</p>
                         <p><b>Team Size:</b> 4</p>
                         <p><b>Duration:</b> January 2023 - August 2023</p>
                     </div>
@@ -181,7 +181,7 @@ function ProjectDescription(props) {
             {projectName === "Interaction Editor" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, HTML & CSS, react</p>
+                        <p><b>Technology:</b> three.js, HTML & CSS, React</p>
                         <p><b>Team Size:</b> 5</p>
                         <p><b>Duration:</b> March 2023 - August 2023</p>
                     </div>
@@ -190,7 +190,7 @@ function ProjectDescription(props) {
                         <h4>Lead Developer</h4>
                         <ul>
                             <li>Learned three.js and applied it to develop an application that worked with both standard videos and 360-degree videos</li>
-                            <li>Utilized a react front-end and a C# back-end to edit the interactions, save the information to the database, and then pull in the information to render them properly on the video</li>
+                            <li>Utilized a React front-end and a C# back-end to edit the interactions, save the information to the database, and then pull in the information to render them properly on the video</li>
                             <li>Implemented designs created in Figma and built the tool while following previously created architectural design patterns</li>
                             <li>Synthesized the results of a heuristic evaluation to discover improvements to the application in terms of features and user experience</li>                        
                             <li>Highlighted simular use cases for interactions throughout the product to give the tool more valid use cases outside of VR</li>
@@ -201,7 +201,7 @@ function ProjectDescription(props) {
             {projectName === "Guided Playback" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> C#, HTML & CSS, react</p>
+                        <p><b>Technology:</b> C#, HTML5, SCSS, React</p>
                         <p><b>Team Size:</b> 6</p>
                         <p><b>Duration:</b> August 2022 - December 2022</p>
                     </div>
@@ -222,7 +222,7 @@ function ProjectDescription(props) {
             {projectName === "AAA Online Courses" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> jQuery, HTML & CSS, PHP</p>
+                        <p><b>Technology:</b> jQuery, HTML5, CSS, PHP</p>
                         <p><b>Team Size:</b> 7</p>
                         <p><b>Duration:</b> December 2020 - July 2021</p>
                     </div>
@@ -241,7 +241,7 @@ function ProjectDescription(props) {
             {projectName === "Online Catalogs & Events" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> jQuery, HTML & CSS, PHP</p>
+                        <p><b>Technology:</b> jQuery, HTML5, CSS, PHP</p>
                         <p><b>Team Size:</b> 7</p>
                         <p><b>Duration:</b> December 2020 - July 2021</p>
                     </div>
