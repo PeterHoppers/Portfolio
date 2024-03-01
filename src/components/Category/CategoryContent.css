@@ -37,6 +37,18 @@
     transform: scale(1.1);
 }
 
+@media(max-height: 768px) {
+    .category-content__holder input {
+        width: 350px;
+    }
+}
+
+@media(max-width: 1400px) {    
+    .category-content__holder input {
+        width: 350px;
+    }
+}
+
 @media(max-width: 768px) {    
     .category-content__holder input {
         width: 250px;

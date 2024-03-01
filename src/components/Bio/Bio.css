@@ -50,12 +50,25 @@
 
 @media(max-width: 576px) {
     .bio-holder {
-        font-size: .7em;
+        font-size: .55em;
     }
 
     .left-bio h1 { 
         font-size: 4em;
         margin-top: 1em;
     }
+
+    .right-bio p {
+        margin: .5em 0;
+    }
 }
 
+@media(max-height: 768px) {
+    .left-bio {
+        margin-top: 2em;
+    }
+
+    .right-bio p {
+        margin: .5em 0;
+    }    
+}
