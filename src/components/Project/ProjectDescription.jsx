@@ -161,7 +161,7 @@ function ProjectDescription(props) {
             {projectName === "In-Headset Navigation" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, video.js, React</p>
+                        <p><b>Technology:</b> three.js, video.js, ReactJs</p>
                         <p><b>Team Size:</b> 4</p>
                         <p><b>Duration:</b> January 2023 - August 2023</p>
                     </div>
@@ -181,7 +181,7 @@ function ProjectDescription(props) {
             {projectName === "Interaction Editor" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, HTML & CSS, React</p>
+                        <p><b>Technology:</b> three.js, HTML5, SCSS, ReactJs</p>
                         <p><b>Team Size:</b> 5</p>
                         <p><b>Duration:</b> March 2023 - August 2023</p>
                     </div>
@@ -201,7 +201,7 @@ function ProjectDescription(props) {
             {projectName === "Guided Playback" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> C#, HTML5, SCSS, React</p>
+                        <p><b>Technology:</b> C#, HTML5, SCSS, ReactJs</p>
                         <p><b>Team Size:</b> 6</p>
                         <p><b>Duration:</b> August 2022 - December 2022</p>
                     </div>
@@ -219,10 +219,10 @@ function ProjectDescription(props) {
                     
                 </>
             }
-            {projectName === "AAA Online Courses" &&
+            {projectName === "Online Driving Courses" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> jQuery, HTML5, CSS, PHP</p>
+                        <p><b>Technology:</b> jQuery, Bootstrap, CSS, PHP</p>
                         <p><b>Team Size:</b> 7</p>
                         <p><b>Duration:</b> December 2020 - July 2021</p>
                     </div>
@@ -230,8 +230,8 @@ function ProjectDescription(props) {
                         <h3>Roles and Responsibilities:</h3>
                         <h4>Front-end Developer</h4>
                         <ul>
-                            <li>Created wireframes that got reviewed and revised through meetings with project managers and the client</li>
-                            <li>Constructed a custom front-end piece for navigation through courses with HTML5, JavaScript, and CSS</li>   
+                            <li>Drafted wireframes and designs to clarify with the client what their requirements were and how they wanted to achieve those visually</li>
+                            <li>Constructed a custom front-end piece for navigation through courses with Bootstrap, JavaScript, and CSS</li>   
                             <li>Prototyped and developed the registration page to accept dynamic information with jQuery and PHP</li>
                             <li>Sought out possible UX issues during testing periods and developed solutions for them</li>                        
                         </ul>
@@ -241,18 +241,17 @@ function ProjectDescription(props) {
             {projectName === "Online Catalogs & Events" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> jQuery, HTML5, CSS, PHP</p>
-                        <p><b>Team Size:</b> 7</p>
-                        <p><b>Duration:</b> December 2020 - July 2021</p>
+                        <p><b>Technology:</b> jQuery, Bootstrap, CSS, PHP</p>
+                        <p><b>Team Size:</b> 4 - 7</p>
+                        <p><b>Duration:</b> July 2020 - August 2021</p>
                     </div>
                     <div className='project-description__roles'>
                         <h3>Roles and Responsibilities:</h3>
                         <h4>Front-end Developer</h4>
                         <ul>
-                            <li>Created wireframes that got reviewed and revised through meetings with project managers and the client</li>
-                            <li>Constructed a custom front-end piece for navigation through courses with HTML5, JavaScript, and CSS</li>   
-                            <li>Prototyped and developed the registration page to accept dynamic information with jQuery and PHP</li>
-                            <li>Sought out possible UX issues the stemmed from combining code from multiple programmers during testing periods and developed solutions for them</li>                        
+                            <li>Created wireframes in an iterative fashion directly with the client and internal project management team</li>
+                            <li>Utilized Bootstrap classes and flexbox to achieve proper responsiveness for all screen sizes</li>   
+                            <li>Worked with a system that was developed upon a JSON and AJAX framework</li>                      
                         </ul>
                     </div>
                 </>

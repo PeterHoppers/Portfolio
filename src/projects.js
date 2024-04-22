@@ -67,8 +67,8 @@ const Projects = [
         "https://www.youtube.com/embed/fo_O2GgBYwI?si=LkqVP8tulU3Hiu8Y",
     ),
     new Project(
-        "AAA Online Courses",
-        "Front-end design and development for AAA's new online courses.",
+        "Online Driving Courses",
+        "Front-end design and development for a large national automobile association's new online courses.",
         [
             Categories.Web
         ],
