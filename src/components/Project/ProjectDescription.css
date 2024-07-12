@@ -31,11 +31,13 @@
 @media(max-width: 768px) {
     .project-description { 
         flex-direction: column;
+        margin-top: 0;
     }
 
     .project-description__short-summary {
         border-right: 0;
         border-bottom: 3px solid white;
+        padding-bottom: 0.5em;
     }
 
     .project-description__roles {
