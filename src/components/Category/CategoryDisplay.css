@@ -10,8 +10,7 @@
 }
   
 .category-display.category-selected {
-    height: auto;
-    top: 0;    
+    height: 100vh;
 }
 
 .category-display.category-transitioning {
