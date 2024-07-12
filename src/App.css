@@ -3,7 +3,7 @@
   --category-display-height: 150px;
   --category-titles-opened-height: 80px;
   --full-height: 100vh; /* fullback just in case dvh isn't supported */
-  --full-height: 100dvh;
+  --full-height: 100svh;
 }
 
 #root {
