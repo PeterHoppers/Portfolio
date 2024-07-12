@@ -112,4 +112,12 @@
     .project-content {        
         font-size: 1.25em;
     }
-  }
+
+    .project-content .carousel.carousel-slider .control-arrow {
+        width: auto;
+    }
+
+    .project-content .carousel .slide .legend {
+        padding-bottom: 20px;
+    }
+}
