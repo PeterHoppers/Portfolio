@@ -1,7 +1,12 @@
 .bio-holder {
     display: flex;
     gap: 5em;
-    padding-bottom: 100px;
+    max-width: 1400px;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+    padding-top: var(--header-height);
+    padding-bottom: var(--category-display-height);
 }
 
 .bio-holder > div {
@@ -33,7 +38,6 @@
 
     .left-bio h1 { 
         font-size: 5em;
-        margin-top: 1em;
     }
 
     .left-bio {
@@ -44,7 +48,6 @@
 @media(max-width: 768px) {
     .bio-holder {
         font-size: .85em;
-        padding-bottom: 250px;
     }
 }
 
@@ -55,7 +58,7 @@
 
     .left-bio h1 { 
         font-size: 4em;
-        margin-top: 1em;
+        margin-top: 0;
     }
 
     .right-bio p {
@@ -65,10 +68,21 @@
 
 @media(max-height: 768px) {
     .left-bio {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .right-bio p {
         margin: .5em 0;
     }    
+}
+
+@media(max-height: 500px) {
+    .left-bio {
+        h1 {
+            font-size: 3em;
+        }
+    }
+    .bio-holder {
+        font-size: 0.5em;
+    }
 }

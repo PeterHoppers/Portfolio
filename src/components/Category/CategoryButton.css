@@ -45,3 +45,11 @@
         border: 3px solid white;
     }
 }
+
+@media(max-height: 500px) {
+    .category,
+    .category:hover {
+        height: 100%;
+        font-size: 2em;
+    }
+}
