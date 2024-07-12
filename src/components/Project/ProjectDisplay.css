@@ -37,9 +37,7 @@
 }
 
 @media(max-width: 768px) {
-    .project-display__close-btn {        
-        top: 2em;
-        right: 2em;
+    .project-display__close-btn {
         width: 40px;
     }
 
