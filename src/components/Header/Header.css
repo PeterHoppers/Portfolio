@@ -3,33 +3,37 @@ header {
     left: 0;
     position: absolute;  
     width: 100%;
-    height: 50px;
+    height: var(--header-height);
     background-color: teal;
+    --header-icon-padding: 10px;
 }
 
 .header__socials {
     height: 100%;
     display: flex;
     justify-content: end;
-    gap: 1em;
+    gap: .25em;
     padding-right: 1em;
 }
   
 header a {  
     display: flex;
-    padding: 5px;
+    padding: var(--header-icon-padding);
     aspect-ratio: 1 / 1;
 }
 
 header img {    
-    transition: all .15s ease-in;
+    transition: all .125s ease-in;
+    height: calc(var(--header-height) - (2 * var(--header-icon-padding)));
 }
 
 header img:hover {
     transform: scale(1.25);
 } 
 
-header a,
-header img {
-    max-height: 100%;
+@media (max-width: 768px) {
+    .header__socials {
+        padding-right: .25em;
+        gap: 0;
+    }
 }
