@@ -38,7 +38,12 @@
 
 @media(max-width: 768px) {
     .project-display__close-btn {        
-        top: 1.5em;
-        right: 1.5em;
+        top: 2em;
+        right: 2em;
+        width: 40px;
+    }
+
+    .project-display__visual {
+        padding: 0em 1em 1em;
     }
 }
