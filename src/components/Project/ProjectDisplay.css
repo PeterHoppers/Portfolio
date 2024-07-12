@@ -11,7 +11,7 @@
 }
 
 .project-display.project-selected {
-    height: 100vh;
+    height: var(--full-height);
     overflow: auto;
 }
 

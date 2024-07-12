@@ -2,6 +2,8 @@
   --header-height: 50px;
   --category-display-height: 150px;
   --category-titles-opened-height: 80px;
+  --full-height: 100vh; /* fullback just in case custom props aren't supported */
+  --full-height: calc(var(--vh, 1vh) * 100);
 }
 
 #root {
