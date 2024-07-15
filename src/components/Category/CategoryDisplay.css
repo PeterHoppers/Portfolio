@@ -18,10 +18,6 @@
     overflow: hidden;
 }
 
-.category-display.category-project-display {
-    height: var(--max-full-height);
-}
-
 .category-holder { 
     min-height: var(--category-display-height);  
     display: grid;
