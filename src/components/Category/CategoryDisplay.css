@@ -3,7 +3,7 @@
     left: 0;
     right: 0;  
     bottom: 0;
-    height: var(--category-display-height);
+    height: var(--category-interaction-height);
     transition: height .5s cubic-bezier(0.16, 1, 0.73, 1.04);
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .category-holder { 
-    min-height: var(--category-display-height);  
+    min-height: var(--category-interaction-height);  
     display: grid;
     grid-auto-flow: column;
 }

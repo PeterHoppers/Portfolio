@@ -1,6 +1,7 @@
 :root {
   --header-height: 50px;
-  --category-display-height: 150px;
+  --category-interaction-height: 150px;
+  --category-display-height: calc(.65 * var(--category-interaction-height));
   --category-titles-opened-height: 80px;
   --full-height: 100vh; /* fullback just in case svh isn't supported */
   --full-height: 100svh;
@@ -11,25 +12,28 @@
 #root {
   text-align: center;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media(max-width: 768px) {
   :root {
-    --category-display-height: 200px;    
+    --category-interaction-height: 250px;
+    --category-display-height: 250px;    
     --category-titles-opened-height: 285px;
   }
 }
 
 @media(max-width: 500px) {
   :root {
+    --category-interaction-height: 200px;
     --category-display-height: 200px;
     --category-titles-opened-height: 200px;
   }
 }
 
 @media(max-height: 500px) {
-  :root {
+  :root {    
+    --category-interaction-height: 70px;
     --category-display-height: 70px;    
     --category-titles-opened-height: 70px;
   }

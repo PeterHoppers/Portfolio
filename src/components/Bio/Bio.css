@@ -2,7 +2,6 @@
     display: flex;
     gap: 5em;
     max-width: 1400px;
-    padding: 0 2rem;
     margin: 0 auto;
 
     padding-top: var(--header-height);
@@ -14,7 +13,9 @@
 }
 
 .left-bio {
-    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-bio h1 {
@@ -28,12 +29,13 @@
     flex-direction: column;
     justify-content: center;
     font-size: 1.35em;
+    padding: 0 1em;
 }
 
 @media(max-width: 1080px) {
     .bio-holder {
         flex-direction: column;
-        gap: 2em;
+        gap: 1em;
     }
 
     .left-bio h1 { 
@@ -41,13 +43,25 @@
     }
 
     .left-bio {
-        margin-top: 0;
+        margin-top: 1em;
+    }
+
+    .right-bio {
+        margin-bottom: 1em;
     }
 }
 
 @media(max-width: 768px) {
     .bio-holder {
         font-size: .85em;
+    }
+
+    .left-bio {
+        flex: 1 1 0px;
+    }
+
+    .right-bio {
+        flex: 4 1 0px !important;
     }
 }
 
@@ -56,8 +70,7 @@
         font-size: .55em;
     }
 
-    .left-bio h1 { 
-        font-size: 4em;
+    .left-bio h1 {
         margin-top: 0;
     }
 
@@ -66,23 +79,48 @@
     }
 }
 
-@media(max-height: 768px) {
-    .left-bio {
-        margin-top: 1em;
+@media(max-width: 400px) {
+    .bio-holder {
+        font-size: .5em;
     }
 
-    .right-bio p {
-        margin: .5em 0;
+    .right-bio {
+        flex: 2 1 0px !important;
+    }
+}
+
+@media(max-height: 1080px) and (max-width: 576px) {
+    .right-bio {
+        font-size: 1rem;
     }    
+}
+
+@media(max-height: 768px) and (max-width: 576px) {
+    .left-bio {
+        margin-top: 0em;
+    }
+
+    .right-bio {
+        font-size: 1.35em;
+        p {
+            margin: .5em 0;
+        }    
+    }
 }
 
 @media(max-height: 500px) {
     .left-bio {
         h1 {
-            font-size: 3em;
+            margin-top: .5em;
+            font-size: 4em;
         }
     }
     .bio-holder {
         font-size: 0.5em;
     }
+
+    .right-bio p {
+        margin: .5em 0;
+        font-size: 1em;
+    } 
 }
