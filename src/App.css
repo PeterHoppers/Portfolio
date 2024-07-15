@@ -31,10 +31,18 @@
   }
 }
 
+@media(max-width: 400px) {
+  :root {
+    --category-interaction-height: 150px;
+    --category-display-height: 150px;
+    --category-titles-opened-height: 150px;
+  }
+}
+
 @media(max-height: 500px) {
   :root {    
-    --category-interaction-height: 70px;
-    --category-display-height: 70px;    
-    --category-titles-opened-height: 70px;
+    --category-interaction-height: 50px;
+    --category-display-height: 50px;    
+    --category-titles-opened-height: 50px;
   }
 }

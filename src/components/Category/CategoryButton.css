@@ -49,8 +49,9 @@
 @media(max-height: 500px) {
     .category,
     .category:hover {
-        height: 100%;
-        font-size: 1.5em;
+        height: 100%;        
+        font-size: 1em;
+        padding: inherit;
     }
 }
 

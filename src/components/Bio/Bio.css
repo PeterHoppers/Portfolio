@@ -54,9 +54,15 @@
     }
 }
 
+@media(max-height: 1080px) and (max-width: 576px) {
+    .right-bio {
+        font-size: 1rem;
+    }    
+}
+
 @media(max-width: 576px) {
     .bio-holder {
-        font-size: .55em;
+        font-size: .7em;
     }
 
     .left-bio h1 {
@@ -70,14 +76,14 @@
 
 @media(max-width: 400px) {
     .bio-holder {
-        font-size: .5em;
+        font-size: .6em;
     }
 }
 
-@media(max-height: 1080px) and (max-width: 576px) {
-    .right-bio {
-        font-size: 1rem;
-    }    
+@media(max-width: 375px) {
+    .bio-holder {
+        font-size: .5em;
+    }
 }
 
 @media(max-height: 768px) and (max-width: 576px) {
@@ -100,12 +106,8 @@
             font-size: 4em;
         }
     }
-    .bio-holder {
-        font-size: 0.5em;
-    }
 
-    .right-bio p {
-        margin: .5em 0;
-        font-size: 1em;
-    } 
+    .bio-holder {
+        font-size: 0.45em;
+    }
 }
