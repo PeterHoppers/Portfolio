@@ -13,7 +13,8 @@
     height: var(--full-height);
 }
 
-.category-display.category-transitioning {
+.category-display.category-transitioning,
+.category-display.category-project-display {
     overflow: hidden;
 }
 

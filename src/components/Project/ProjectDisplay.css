@@ -1,9 +1,9 @@
 .project-display {
     position: absolute;
-    bottom: 0;    
+    bottom: -10%;    
     left: 0;
     height: 0;
-    width: 100vw;    
+    right: 0;
     display: grid;
     background-color: rgba(0, 0, 0, .5);
     transition: height .5s cubic-bezier(0.5, 1, 0.89, 1);
@@ -13,6 +13,7 @@
 .project-display.project-selected {
     height: var(--full-height);
     overflow: auto;
+    bottom: 0;
 }
 
 .project-display__visual {

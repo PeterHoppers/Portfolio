@@ -34,7 +34,7 @@ function CategoryDisplay(props) {
 
     const updateProject = (selectedProject) => {
         setProject(selectedProject);
-        document.getElementsByClassName("category-display")[0].scrollTo(0, 0);
+        document.getElementsByClassName("category-display")[0].scrollTo(0, 0); //so that it focuses on the modal
     }
 
     let categoryDisplayClass = `category-display category-${category.toLowerCase()}`;
@@ -45,6 +45,10 @@ function CategoryDisplay(props) {
 
     if (categoryDisplayState == CategoryState.Closing || categoryDisplayState == CategoryState.Opening) {
         categoryDisplayClass += " category-transitioning";
+    }
+
+    if (projectDisplayed != null) {
+        categoryDisplayClass += " category-project-display";
     }
 
     return (
