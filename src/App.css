@@ -4,8 +4,6 @@
   --category-titles-opened-height: 80px;
   --full-height: 100vh; /* fullback just in case svh isn't supported */
   --full-height: 100svh;
-  --max-full-height: var(--full-height);
-  --max-full-height: 100lvh;
   --full-width: 100vw;
   --full-width: 100svw;
 }
