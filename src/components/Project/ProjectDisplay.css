@@ -6,7 +6,7 @@
     right: 0;
     display: grid;
     background-color: rgba(0, 0, 0, .5);
-    transition: height .5s cubic-bezier(0.5, 1, 0.89, 1);
+    transition: height .5s cubic-bezier(0.16, 1, 0.73, 1.04);
     overflow: hidden;
 }
 
