@@ -8,10 +8,6 @@
     padding-bottom: var(--category-display-height);
 }
 
-.bio-holder > div {
-    flex: 1 1 0px;
-}
-
 .left-bio {
     display: flex;
     align-items: center;
@@ -35,7 +31,8 @@
 @media(max-width: 1080px) {
     .bio-holder {
         flex-direction: column;
-        gap: 1em;
+        margin: auto;
+        gap: 1rem;
     }
 
     .left-bio h1 { 
@@ -54,14 +51,6 @@
 @media(max-width: 768px) {
     .bio-holder {
         font-size: .85em;
-    }
-
-    .left-bio {
-        flex: 1 1 0px;
-    }
-
-    .right-bio {
-        flex: 4 1 0px !important;
     }
 }
 
@@ -82,10 +71,6 @@
 @media(max-width: 400px) {
     .bio-holder {
         font-size: .5em;
-    }
-
-    .right-bio {
-        flex: 2 1 0px !important;
     }
 }
 
