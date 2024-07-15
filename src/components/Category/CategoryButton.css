@@ -50,6 +50,13 @@
     .category,
     .category:hover {
         height: 100%;
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 500px) {
+    .category, .category:hover {
+        padding: .5em;
+        font-size: 1.25em;
     }
 }
