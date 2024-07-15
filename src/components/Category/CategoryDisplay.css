@@ -47,7 +47,7 @@
     position: relative;
     display: none;
     flex-grow: 1;
-    width: 300%;
+    width: calc(var(--full-width) * 3);
 }
 
 .category-selected:not(.category-transitioning) .category-content-holder {    
@@ -60,13 +60,13 @@
 }
 
 .category-games .category-content-holder {
-    right: 0;
+    right: calc(var(--full-width) * 0);
 }
 
 .category-vr .category-content-holder {
-    right: 100%;
+    right: calc(var(--full-width) * 1);
 }
 
 .category-web .category-content-holder {
-    right: 200%;
+    right: calc(var(--full-width) * 2)
 }
