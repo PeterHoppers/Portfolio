@@ -1,6 +1,6 @@
 .project-display {
     position: absolute;
-    bottom: -10%;    
+    bottom: -25%;    
     left: 0;
     height: 0;
     right: 0;
@@ -11,7 +11,7 @@
 }
 
 .project-display.project-selected {
-    height: var(--full-height);
+    height: var(--max-full-height);
     overflow: auto;
     bottom: 0;
 }
