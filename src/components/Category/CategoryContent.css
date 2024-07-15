@@ -1,5 +1,5 @@
 .category-content {
-    width: 100%;
+    width: var(--full-width);
     display: flex;
 }
 
