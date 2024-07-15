@@ -12,7 +12,7 @@ header {
     height: 100%;
     display: flex;
     justify-content: end;
-    gap: .25em;
+    gap: .125em;
     padding-right: 1em;
 }
   
@@ -25,9 +25,10 @@ header a {
 header img {    
     transition: all .125s ease-in;
     height: calc(var(--header-height) - (2 * var(--header-icon-padding)));
+    aspect-ratio: 1 / 1;
 }
 
-header img:hover {
+header a:hover img {
     transform: scale(1.25);
 } 
 
