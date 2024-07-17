@@ -4,6 +4,31 @@ function ProjectDescription(props) {
     const projectName = props.projectName;
     return (
         <div className='project-description'>
+            {projectName === "Mind the Gap" &&
+                <>
+                    <div className='project-description__short-summary'>
+                        <p><b>Genre:</b> Music & Rhythm, Trivia</p>
+                        <p><b>Technology:</b> React, HTML5, SCSS, Next.js</p>
+                        <p><b>Team Size:</b> 1</p>
+                        <p><b>Duration:</b> May 2024 - July 2024</p>
+                    </div>       
+                    <div className='project-description__roles'>
+                        <h3>Roles and Responsibilities:</h3>
+                        <h4>Game Programmer</h4>
+                        <ul>
+                            <li>Created a simple prototype in next.js within a week so that playtesters could highlight where the fun was and possible pain points in the core gameplay loop</li>
+                            <li>Coded a decoupled level system so that new levels could be easily developed and balance changes could be made instantaneously</li>
+                            <li>Utilized the web audio API to slice and convert audio into the needed conditions so that levels could be changed without needing to spend time create new audio files</li>
+                        </ul>
+                        <h4>UX Designer</h4>
+                        <ul>
+                            <li>Iterated the user experience through multiple stages of playtesting, modifying UI elements to resolve user pain points and create intuitive design</li>
+                            <li>Researched the necessary sound effects to help reinforce a user’s interaction with the game and then implemented them</li>
+                            <li>Designed advanced levels through analyzing micro-genres and popular audio edits to create a feeling of skill progression through the game</li>
+                        </ul>                        
+                    </div>
+                </>
+            }
             {projectName === "VR Cornhole Training" &&
                 <>
                     <div className='project-description__short-summary'>
@@ -161,7 +186,7 @@ function ProjectDescription(props) {
             {projectName === "In-Headset Navigation" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, video.js, ReactJs</p>
+                        <p><b>Technology:</b> three.js, video.js, React</p>
                         <p><b>Team Size:</b> 4</p>
                         <p><b>Duration:</b> January 2023 - August 2023</p>
                     </div>
@@ -181,7 +206,7 @@ function ProjectDescription(props) {
             {projectName === "Interaction Editor" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> three.js, HTML5, SCSS, ReactJs</p>
+                        <p><b>Technology:</b> three.js, HTML5, SCSS, React</p>
                         <p><b>Team Size:</b> 5</p>
                         <p><b>Duration:</b> March 2023 - August 2023</p>
                     </div>
@@ -201,7 +226,7 @@ function ProjectDescription(props) {
             {projectName === "Guided Playback" &&
                 <>
                     <div className='project-description__short-summary'>
-                        <p><b>Technology:</b> C#, HTML5, SCSS, ReactJs</p>
+                        <p><b>Technology:</b> C#, HTML5, SCSS, React</p>
                         <p><b>Team Size:</b> 6</p>
                         <p><b>Duration:</b> August 2022 - December 2022</p>
                     </div>

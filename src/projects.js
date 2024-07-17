@@ -1,5 +1,7 @@
 import {Categories} from "./util.js";
 
+const playCallToAction = "Click Here to Play!";
+
 class Project {
     constructor(name, description, category, coverArt, thumbnails, previewVideoURl, viewText, viewURL) {
         this.name = name;
@@ -22,6 +24,19 @@ class Thumbnail {
 }
 
 const Projects = [
+    new Project(
+        "Mind the Gap",
+        "How good is your rhythm and song knowledge? In this music sequencing game, you try to guesstimate the gap between pieces of a song.",
+        [
+            Categories.Games,
+            Categories.Web
+        ],
+        "mindtheGap.png",
+        null,
+        "https://www.youtube.com/embed/j-e45pydjt4?si=_yhdRpD1iDA3imx0",
+        playCallToAction,
+        "https://music-pause.vercel.app/"
+    ),
     new Project(
         "VR Cornhole Training",
         "Experience cornhole like you never have before! Throw bags in 30 different levels with varying conditions and earn trophies for high scores.",
@@ -65,29 +80,7 @@ const Projects = [
         "guidedPlayback.png",
         null,
         "https://www.youtube.com/embed/fo_O2GgBYwI?si=LkqVP8tulU3Hiu8Y",
-    ),
-    new Project(
-        "Online Driving Courses",
-        "Front-end design and development for a large national automobile association's new online courses.",
-        [
-            Categories.Web
-        ],
-        "aaaCover.png",
-        [
-            new Thumbnail(
-                "aaacourse.png",
-                "A view of the landing page when someone would enroll within the course and go through the modules."
-            ),
-            new Thumbnail(
-                "aaaregister.jpg",
-                "The registration page, which was in charge of displaying the correct prices depending what state and zipcode they lived in."
-            ),
-            new Thumbnail(
-                "aaaregister2.jpg",
-                "This part of the registration page highlights the need for all the front-end validation of information."
-            )    
-        ],
-    ),
+    ),    
     new Project(
         "Online Catalogs & Events",
         "Working directly with various associations across the country to create their online catalog and help them host online events.",
@@ -142,7 +135,7 @@ const Projects = [
             )    
         ],
         null,
-        "Click Here to Play!",
+        playCallToAction,
         "https://peterhoppers.github.io/Endless-Scramble/"
     ),
     new Project(
@@ -167,10 +160,18 @@ const Projects = [
             ),
         ],
         null,
-        "Click Here to Play!",
+        playCallToAction,
         "https://nofunpetegames.github.io/Charged/"
-    ),
-    new Project(
+    )
+];
+
+export {
+    Project,
+    Projects
+};
+
+/* 
+new Project(
         "Creator Colosseum",
         "Side-scrolling beat ‘em up that got my face when the team needed me to lead.",
         [
@@ -194,15 +195,30 @@ const Projects = [
         null,
         "Click Here to Download!",
         "https://peterhoppe.itch.io/creator-colosseum"
-    )
-];
-
-export {
-    Project,
-    Projects
-};
-
-/* ,
+    ),
+new Project(
+        "Online Driving Courses",
+        "Front-end design and development for a large national automobile association's new online courses.",
+        [
+            Categories.Web
+        ],
+        "aaaCover.png",
+        [
+            new Thumbnail(
+                "aaacourse.png",
+                "A view of the landing page when someone would enroll within the course and go through the modules."
+            ),
+            new Thumbnail(
+                "aaaregister.jpg",
+                "The registration page, which was in charge of displaying the correct prices depending what state and zipcode they lived in."
+            ),
+            new Thumbnail(
+                "aaaregister2.jpg",
+                "This part of the registration page highlights the need for all the front-end validation of information."
+            )    
+        ],
+    ),
+,
     new Project(
         "Diesel Thunder",
         "An online third-person shooter where players battled each other in tanks.",
@@ -250,6 +266,6 @@ export {
             ),
         ],
         null,
-        "Click Here to Play!",
+        playCallToAction,
         "https://sly-merc.neocities.org/inclusion3"
     ) */
