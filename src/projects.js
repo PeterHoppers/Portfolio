@@ -26,7 +26,7 @@ class Thumbnail {
 const Projects = [
     new Project(
         "Mind the Gap",
-        "How good is your rhythm and song knowledge? In this music sequencing game, you try to guesstimate the gap between pieces of a song.",
+        "How good is your rhythm and song knowledge? In this music sequencing game, you try to guesstimate the gap between two pieces of a song.",
         [
             Categories.Games,
             Categories.Web
@@ -35,7 +35,7 @@ const Projects = [
         null,
         "https://www.youtube.com/embed/j-e45pydjt4?si=_yhdRpD1iDA3imx0",
         playCallToAction,
-        "https://music-pause.vercel.app/"
+        "https://music-gap.vercel.app/"
     ),
     new Project(
         "VR Cornhole Training",
