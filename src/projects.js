@@ -25,6 +25,35 @@ class Thumbnail {
 
 const Projects = [
     new Project(
+        "Cosmic Scramble",
+        "Travel through space alone or with a friend as you scramble to escape the alien threat with every input scrambling your controls.",
+        [
+            Categories.Games
+        ],
+        "cosmicScramble.png",
+        [
+            new Thumbnail(
+                "level1-4.gif",
+                "Everytime the player inputs a direction on the joystick, the relationship between which input direction would move which direction would scramble."
+            ),
+            new Thumbnail(
+                "level1-5.gif",
+                "Time only advances when the player would input something or after about a second, giving the player just enough time to react."
+            ),
+            new Thumbnail(
+                "arcade_cab.png",
+                "The arcade cabinet itself in the arcade. This photo was taken when it was running an earlier build of the game."
+            ),
+            new Thumbnail(
+                "scriptableObjectsExample.png",
+                "A visual breakdown of how the main systems of the game used scriptable objects to isolate different pieces of logic."
+            ),
+               
+        ],
+        null,
+        null
+    ),
+    new Project(
         "Mind the Gap",
         "How good is your rhythm and song knowledge? In this music sequencing game, you try to guesstimate the gap between two pieces of a song.",
         [
@@ -112,31 +141,6 @@ const Projects = [
         "outsiders3.png",
         null,
         "https://www.youtube.com/embed/bSOF01sCaGA?si=bREw1xSm0MYKpceC",
-    ),
-    new Project(
-        "Endless Scramble",
-        "A solo developed game where the player needed to navigate through obstacles as fast as possible, with every input scrambling their controls.",
-        [
-            Categories.Games
-        ],
-        "endlessScramble.png",
-        [
-            new Thumbnail(
-                "movers.gif",
-                "Everytime the player pressed a button to move, the relationship between which button would move which direction would be scrambled."
-            ),
-            new Thumbnail(
-                "endlessscramble2.png",
-                "Players needed to complete the levels in a certain amount of time to earn medals that would unlock more levels."
-            ),
-            new Thumbnail(
-                "endlessscramble3.png",
-                "To gather as much feedback on it as fast as possible, a web build was made."
-            )    
-        ],
-        null,
-        playCallToAction,
-        "https://peterhoppers.github.io/Endless-Scramble/"
     ),
     new Project(
         "CHARGED",
@@ -268,4 +272,32 @@ new Project(
         null,
         playCallToAction,
         "https://sly-merc.neocities.org/inclusion3"
-    ) */
+    ) ,
+     new Project(
+        "Endless Scramble",
+        "A solo developed game where the player needed to navigate through obstacles as fast as possible, with every input scrambling their controls.",
+        [
+            Categories.Games
+        ],
+        "endlessScramble.png",
+        [
+            new Thumbnail(
+                "movers.gif",
+                "Everytime the player pressed a button to move, the relationship between which button would move which direction would be scrambled."
+            ),
+            new Thumbnail(
+                "endlessscramble2.png",
+                "Players needed to complete the levels in a certain amount of time to earn medals that would unlock more levels."
+            ),
+            new Thumbnail(
+                "endlessscramble3.png",
+                "To gather as much feedback on it as fast as possible, a web build was made."
+            )    
+        ],
+        null,
+        playCallToAction,
+        "https://peterhoppers.github.io/Endless-Scramble/"
+    ),
+        
+    
+    */

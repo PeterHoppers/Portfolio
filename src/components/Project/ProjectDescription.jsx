@@ -4,6 +4,31 @@ function ProjectDescription(props) {
     const projectName = props.projectName;
     return (
         <div className='project-description'>
+            {projectName === "Cosmic Scramble" &&
+                <>
+                    <div className='project-description__short-summary'>
+                        <p><b>Genre:</b> Arcade, Puzzle</p>
+                        <p><b>Engine:</b> Unity</p>
+                        <p><b>Team Size:</b> 2</p>
+                        <p><b>Duration:</b> October 2024 - February 2025</p>
+                    </div>             
+                    <div className='project-description__roles'>
+                        <h3>Roles and Responsibilities:</h3>
+                        <h4>Game Designer</h4>
+                        <ul>
+                            <li>Focused design around one unique gameplay hook and analyzed existing arcade games to distill tricks about their game structure</li>                        
+                            <li>Introduced hazards by isolating each new one before designing levels that utilized multiple hazards at once</li>
+                            <li>Coordinated with players of varying skill sets and game knowledge to acquire a range of feedback through playtesting a prototype</li>
+                        </ul>
+                        <h4>Game Programmer</h4>
+                        <ul>
+                            <li>Utilized Unity's scriptable object system to create modular systems that had configuration code and logic code decoupled from each other</li>
+                            <li>Created a level editor tool that used flex-based anchor points on the grid to increase the efficiency of level creation</li>
+                            <li>Developed an event-driven architecture to modify the state of the game so that major systems of the game could exist separately but still be synced correctly</li>
+                        </ul>
+                    </div>
+                </>
+            }
             {projectName === "Mind the Gap" &&
                 <>
                     <div className='project-description__short-summary'>
