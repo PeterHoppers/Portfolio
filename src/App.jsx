@@ -14,7 +14,12 @@ function App() {
     <>
       <Header />
       <Bio focus={focus} />
-      <CategoryDisplay/>  
+      {focus 
+        ?
+          <FocusDisplay focus={focus}/>
+        :
+          <CategoryDisplay/> 
+      }  
     </>
   )
 }

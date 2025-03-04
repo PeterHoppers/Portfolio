@@ -1,0 +1,12 @@
+.focus-display {
+    margin-top: calc(var(--category-display-height) * -1);
+    padding-top: 4em;
+}
+
+.focus-display__holder {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 2em;
+    justify-content: center;
+}

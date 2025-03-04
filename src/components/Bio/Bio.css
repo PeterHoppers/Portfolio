@@ -6,6 +6,9 @@
 
     padding-top: var(--header-height);
     padding-bottom: var(--category-display-height);
+
+    height: 100%;
+    justify-content: center;
 }
 
 .left-bio {
