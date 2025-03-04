@@ -1,5 +1,4 @@
 import { Carousel } from 'react-responsive-carousel';
-import { Project } from '../../projects';
 import ProjectDescription from './ProjectDescription';
 import "./ProjectContent.css";
 

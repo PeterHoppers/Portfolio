@@ -1,4 +1,4 @@
-import {Categories} from "./util.js";
+import { Categories } from "./definitions";
 
 const playCallToAction = "Click Here to Play!";
 

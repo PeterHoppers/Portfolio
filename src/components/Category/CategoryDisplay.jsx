@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './CategoryDisplay.css';
-import { Categories} from '../../util.js';
+import { Categories } from '../../lib/definitions.js';
 import CategoryButton from './CategoryButton';
 import CategoryContent from './CategoryContent.jsx';
 import ProjectDisplay from "../Project/ProjectDisplay.jsx";
@@ -12,7 +12,7 @@ const CategoryState = Object.freeze({
     Opening: 3
 });
 
-function CategoryDisplay(props) {
+function CategoryDisplay() {
     const [category, setCategory] = useState(Categories.Games);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [categoryDisplayState, setDisplayState] = useState(CategoryState.Closed);
