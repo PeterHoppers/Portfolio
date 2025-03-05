@@ -9,11 +9,13 @@
   
 .category-display.category-selected {
     height: var(--full-height);
+    overflow: hidden;
 }
 
 .category-display.category-transitioning,
 .category-display.category-project-display {
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .category-holder { 
