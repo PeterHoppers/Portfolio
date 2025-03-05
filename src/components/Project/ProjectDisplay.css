@@ -14,6 +14,12 @@
     display: grid;
 }
 
+.focus-display .project-display {  
+    display: grid;  
+    bottom: 0;
+    height: auto !important;
+}
+
 .project-display.project-selected {    
     height: 100%;
     top: 0;

@@ -9,25 +9,26 @@ function FocusDisplay(props) {
     const updateProject = (selectedProject) => {
         setProject(selectedProject);
 
-        const rootElement = document.getElementById("root");        
-        if (selectedProject == null) {
-            rootElement.classList.remove("modal-open");
-        } else {
-            rootElement.classList.add("modal-open");            
-        }
+        setTimeout(() => {
+            document.getElementsByClassName("project-content")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+        }, 10);
+    }
 
-        const header = document.getElementsByTagName("header")[0];
-        console.log(header);
-        header.scrollIntoView();
+    const clearProject = () => {
+        document.getElementsByClassName("focus-display")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+
+        setTimeout(() => {
+            setProject(null);
+        }, 500);
     }
 
     return (
         <section className="focus-display">
-            <h2>Project Examples</h2>
+            <h2 className="focus-display__title">Project Examples</h2>
             <div className="focus-display__holder">
                 <ProjectCollection focus={props.focus} updateProject={updateProject}/>
             </div>
-            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => updateProject(null)}/>            
+            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => clearProject()}/>            
         </section>
     );
 }

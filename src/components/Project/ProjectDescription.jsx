@@ -22,7 +22,7 @@ function ProjectDescription(props) {
                         </ul>
                         <h4>Game Programmer</h4>
                         <ul>
-                            <li>Utilized Unity's scriptable object system to create modular systems that had configuration code and logic code decoupled from each other</li>
+                            <li>Utilized Unity’s scriptable object system to create modular systems that had configuration code and logic code decoupled from each other</li>
                             <li>Created a level editor tool that used flex-based anchor points on the grid to increase the efficiency of level creation</li>
                             <li>Developed an event-driven architecture to modify the state of the game so that major systems of the game could exist separately but still be synced correctly</li>
                         </ul>

@@ -1,6 +1,11 @@
 .focus-display {
     margin-top: calc(var(--category-display-height) * -1);
-    padding-top: 4em;
+    background-color: var(--accent-color);
+    min-height: var(--full-height);
+}
+
+.focus-display__title {
+    font-size: 4em;
 }
 
 .focus-display__holder {
@@ -9,4 +14,8 @@
     padding: 1em;
     gap: 2em;
     justify-content: center;
+}
+
+.focus-display__holder .project-button {
+    width: 450px;
 }
