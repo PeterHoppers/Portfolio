@@ -13,19 +13,19 @@
 }
 
 @media(max-height: 768px) {
-    .project-button input {
+    .project-button {
         width: 350px;
     }
 }
 
 @media(max-width: 1400px) {    
-    .project-button input {
+    .project-button {
         width: 350px;
     }
 }
 
 @media(max-width: 768px) {    
-    .project-button input {
+    .project-button {
         width: 200px;
     }
 }

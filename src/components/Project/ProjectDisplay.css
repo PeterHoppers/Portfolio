@@ -1,5 +1,5 @@
 .project-display {
-    display: grid;
+    display: none;
     visibility: hidden;
     position: relative;
     bottom: -25%;    
@@ -8,6 +8,10 @@
     right: 0;
     background-color: rgba(0, 0, 0, .5);
     transition: height .5s cubic-bezier(0.16, 1, 0.73, 1.04);
+}
+
+.category-selected .project-display {
+    display: grid;
 }
 
 .project-display.project-selected {    
