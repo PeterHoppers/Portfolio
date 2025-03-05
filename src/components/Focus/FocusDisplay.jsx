@@ -2,6 +2,7 @@ import './FocusDisplay.css'
 import ProjectCollection from "../Project/ProjectCollection";
 import ProjectDisplay from '../Project/ProjectDisplay';
 import { useState } from 'react';
+import { FocusDisplayAmount } from '../../lib/definitions';
 
 function FocusDisplay(props) {
     const [projectDisplayed, setProject] = useState(null);
@@ -26,7 +27,7 @@ function FocusDisplay(props) {
         <section className="focus-display">
             <h2 className="focus-display__title">Project Examples</h2>
             <div className="focus-display__holder">
-                <ProjectCollection focus={props.focus} updateProject={updateProject}/>
+                <ProjectCollection focus={props.focus} updateProject={updateProject} amount={FocusDisplayAmount}/>
             </div>
             <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => clearProject()}/>            
         </section>

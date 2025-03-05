@@ -4,10 +4,12 @@ import ProjectButton from "./ProjectButton";
 function ProjectCollection(props) {
     const category = props.focus;
     const projectsInCategory = Projects.filter(x => x.category.includes(category));
+    const amountToDisplay = (props.amount) ? props.amount : projectsInCategory.length;
+    const projectsToDisplay = projectsInCategory.slice(0, amountToDisplay);
 
     return (
         <>
-           {projectsInCategory.map(project => {
+           {projectsToDisplay.map(project => {
                 return <ProjectButton key={project.name + props.category} imageSrc={project.coverArt} projectSetter={() => props.updateProject(project)}/>
             })}    
         </>

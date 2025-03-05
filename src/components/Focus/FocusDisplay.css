@@ -6,6 +6,7 @@
 
 .focus-display__title {
     font-size: 4em;
+    font-weight: bold;
 }
 
 .focus-display__holder {

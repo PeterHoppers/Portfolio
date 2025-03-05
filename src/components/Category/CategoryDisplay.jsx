@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './CategoryDisplay.css';
-import { Categories } from '../../lib/definitions.js';
+import { Categories, CategoryDisplayed } from '../../lib/definitions.js';
 import CategoryButton from './CategoryButton';
 import CategoryContent from './CategoryContent.jsx';
 import ProjectDisplay from "../Project/ProjectDisplay.jsx";
@@ -17,6 +17,8 @@ function CategoryDisplay() {
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [categoryDisplayState, setDisplayState] = useState(CategoryState.Closed);
     const [projectDisplayed, setProject] = useState(null);
+
+    const categoryKeys = Object.keys(CategoryDisplayed);
   
     const updateCategory = (selectedCategory) => {        
         if (selectedCategory == category && categoryDisplayState == CategoryState.Open) {
@@ -73,14 +75,14 @@ function CategoryDisplay() {
             }                
             }}>            
             <aside className='category-holder'>
-                {Object.keys(Categories).map(category => {
+                {Object.keys(CategoryDisplayed).map(category => {
                     return <CategoryButton key={category} text={Categories[category]} clickHandler={() => updateCategory(category)}/>
                 })}
             </aside>
             <div className={isTransitioning ? 'category-content-holder category-transitioning' : `category-content-holder`} onTransitionEnd={() => {
                     setIsTransitioning(false);
                 }}>
-                {Object.keys(Categories).map(category => {                    
+                {Object.keys(CategoryDisplayed).map(category => {                    
                     return <CategoryContent key={category} category={category} updateProject={updateProject}/>
                 })}
             </div>
