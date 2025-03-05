@@ -5,8 +5,6 @@
     bottom: 0;
     height: var(--category-interaction-height);
     transition: height .5s cubic-bezier(0.16, 1, 0.73, 1.04);
-    display: flex;
-    flex-direction: column;
 }
   
 .category-display.category-selected {
@@ -15,7 +13,7 @@
 
 .category-display.category-transitioning,
 .category-display.category-project-display {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .category-holder { 
@@ -47,7 +45,8 @@
     position: relative;
     display: none;
     flex-grow: 1;
-    width: calc(var(--full-width) * 3);
+    width: calc(var(--full-width) * 3);    
+    height: calc(100% - var(--category-titles-opened-height));
 }
 
 .category-selected:not(.category-transitioning) .category-content-holder {    

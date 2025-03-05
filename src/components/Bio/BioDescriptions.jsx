@@ -2,7 +2,6 @@ import { Categories } from "../../lib/definitions";
 
 export function BioDescription(props) {
     const focus = props.focus;
-    console.log(focus);
 
     const description = () => {
         switch(focus) {
@@ -33,8 +32,6 @@ export function BioDescription(props) {
                 ;
         }
     }
-
-    console.log(description());
 
     return <>{description()}</>;
 

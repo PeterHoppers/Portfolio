@@ -34,7 +34,18 @@ function CategoryDisplay() {
 
     const updateProject = (selectedProject) => {
         setProject(selectedProject);
-        document.getElementsByClassName("category-display")[0].scrollTo(0, 0); //so that it focuses on the modal
+
+        setTimeout(() => {
+            document.getElementsByClassName("project-content")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+        }, 10);
+    }
+
+    const clearProject = () => {
+        document.getElementsByClassName("category-holder")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+
+        setTimeout(() => {
+            setProject(null);
+        }, 500);
     }
 
     let categoryDisplayClass = `category-display category-${category.toLowerCase()}`;
@@ -74,7 +85,7 @@ function CategoryDisplay() {
                 })}
             </div>
             
-            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => setProject(null)}/>            
+            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => clearProject()}/>            
       </div>
     )
 }
