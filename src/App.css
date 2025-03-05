@@ -2,16 +2,18 @@
   --header-height: 50px;
   --category-interaction-height: 150px;
   --category-display-height: calc(.65 * var(--category-interaction-height));
-  --category-titles-opened-height: 80px;
+  --category-titles-opened-height: 97px;
   --full-height: 100vh; /* fullback just in case svh isn't supported */
   --full-height: 100svh;
   --full-width: 100vw;
   --full-width: 100svw;
+  --accent-color: teal;
 }
 
 #root {
   text-align: center;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 

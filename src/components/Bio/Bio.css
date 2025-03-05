@@ -2,10 +2,12 @@
     display: flex;
     gap: 5em;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 7em auto;
 
     padding-top: var(--header-height);
     padding-bottom: var(--category-display-height);
+
+    justify-content: center;
 }
 
 .left-bio {
@@ -17,7 +19,7 @@
 .left-bio h1 {
     font-size: 170px;
     margin: 0;
-    text-shadow: .1em .1em teal;
+    text-shadow: .1em .1em var(--accent-color);
 }
 
 .right-bio {

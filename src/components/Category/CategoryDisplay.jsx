@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './CategoryDisplay.css';
-import { Categories} from '../../util.js';
+import { Categories, CategoryDisplayed } from '../../lib/definitions.js';
 import CategoryButton from './CategoryButton';
 import CategoryContent from './CategoryContent.jsx';
 import ProjectDisplay from "../Project/ProjectDisplay.jsx";
@@ -12,11 +12,13 @@ const CategoryState = Object.freeze({
     Opening: 3
 });
 
-function CategoryDisplay(props) {
+function CategoryDisplay() {
     const [category, setCategory] = useState(Categories.Games);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [categoryDisplayState, setDisplayState] = useState(CategoryState.Closed);
     const [projectDisplayed, setProject] = useState(null);
+
+    const categoryKeys = Object.keys(CategoryDisplayed);
   
     const updateCategory = (selectedCategory) => {        
         if (selectedCategory == category && categoryDisplayState == CategoryState.Open) {
@@ -34,7 +36,18 @@ function CategoryDisplay(props) {
 
     const updateProject = (selectedProject) => {
         setProject(selectedProject);
-        document.getElementsByClassName("category-display")[0].scrollTo(0, 0); //so that it focuses on the modal
+
+        setTimeout(() => {
+            document.getElementsByClassName("project-content")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+        }, 10);
+    }
+
+    const clearProject = () => {
+        document.getElementsByClassName("category-holder")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+
+        setTimeout(() => {
+            setProject(null);
+        }, 500);
     }
 
     let categoryDisplayClass = `category-display category-${category.toLowerCase()}`;
@@ -62,19 +75,19 @@ function CategoryDisplay(props) {
             }                
             }}>            
             <aside className='category-holder'>
-                {Object.keys(Categories).map(category => {
+                {Object.keys(CategoryDisplayed).map(category => {
                     return <CategoryButton key={category} text={Categories[category]} clickHandler={() => updateCategory(category)}/>
                 })}
             </aside>
             <div className={isTransitioning ? 'category-content-holder category-transitioning' : `category-content-holder`} onTransitionEnd={() => {
                     setIsTransitioning(false);
                 }}>
-                {Object.keys(Categories).map(category => {                    
+                {Object.keys(CategoryDisplayed).map(category => {                    
                     return <CategoryContent key={category} category={category} updateProject={updateProject}/>
                 })}
             </div>
             
-            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => setProject(null)}/>            
+            <ProjectDisplay currentProject = {projectDisplayed} resetProject = {() => clearProject()}/>            
       </div>
     )
 }

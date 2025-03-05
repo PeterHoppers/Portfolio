@@ -1,0 +1,22 @@
+.focus-display {
+    margin-top: calc(var(--category-display-height) * -1);
+    background-color: var(--accent-color);
+    min-height: var(--full-height);
+}
+
+.focus-display__title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.focus-display__holder {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 2em;
+    justify-content: center;
+}
+
+.focus-display__holder .project-button {
+    width: 450px;
+}

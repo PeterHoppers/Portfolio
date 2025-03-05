@@ -1,4 +1,4 @@
-import {Categories} from "./util.js";
+import { Categories } from "./definitions";
 
 const playCallToAction = "Click Here to Play!";
 
@@ -28,7 +28,8 @@ const Projects = [
         "Cosmic Scramble",
         "Travel through space alone or with a friend as you scramble to escape the alien threat with every input scrambling your controls.",
         [
-            Categories.Games
+            Categories.Games,
+            Categories.Unity
         ],
         "cosmicScramble.png",
         [
@@ -71,7 +72,8 @@ const Projects = [
         "Experience cornhole like you never have before! Throw bags in 30 different levels with varying conditions and earn trophies for high scores.",
         [
             Categories.Games,
-            Categories.VR
+            Categories.VR,
+            Categories.Unity
         ],
         "cornhole.png",
         null,
@@ -136,7 +138,8 @@ const Projects = [
         "Outsider's Art Galleries",
         "An interactive experience that gives artists new opportunities to exhibit and sell their work.",
         [
-            Categories.VR
+            Categories.VR,
+            Categories.Unity
         ],
         "outsiders3.png",
         null,
@@ -146,7 +149,8 @@ const Projects = [
         "CHARGED",
         "Physics-based puzzler designed by me, leading an interdisciplinary team of eleven people.",
         [
-            Categories.Games
+            Categories.Games,
+            Categories.Unity
         ],
         "charged1.png",
         [
@@ -166,41 +170,8 @@ const Projects = [
         null,
         playCallToAction,
         "https://nofunpetegames.github.io/Charged/"
-    )
-];
-
-export {
-    Project,
-    Projects
-};
-
-/* 
-new Project(
-        "Creator Colosseum",
-        "Side-scrolling beat ‘em up that got my face when the team needed me to lead.",
-        [
-            Categories.Games
-        ],
-        "creatorCover.png",
-        [
-            new Thumbnail(
-                "cc2.png",
-                "The game's combat was a side-scroller beat-em-up using the teachers at the school for enemeies."
-            ),
-            new Thumbnail(
-                "cc3.png",
-                "There were four different levels in the game that had you traveling around the city that the school took place."
-            ), 
-            new Thumbnail(
-                "cc4.png",
-                "Combat included spells that could be casted, as well as melee and range attacks."
-            ),
-        ],
-        null,
-        "Click Here to Download!",
-        "https://peterhoppe.itch.io/creator-colosseum"
     ),
-new Project(
+    new Project(
         "Online Driving Courses",
         "Front-end design and development for a large national automobile association's new online courses.",
         [
@@ -222,12 +193,38 @@ new Project(
             )    
         ],
     ),
-,
+    new Project(
+        "Creator Colosseum",
+        "Side-scrolling beat ‘em up that got my face when the team needed me to lead.",
+        [
+            Categories.Games,
+            Categories.Unity
+        ],
+        "creatorCover.png",
+        [
+            new Thumbnail(
+                "cc2.png",
+                "The game's combat was a side-scroller beat-em-up using the teachers at the school for enemeies."
+            ),
+            new Thumbnail(
+                "cc3.png",
+                "There were four different levels in the game that had you traveling around the city that the school took place."
+            ), 
+            new Thumbnail(
+                "cc4.png",
+                "Combat included spells that could be casted, as well as melee and range attacks."
+            ),
+        ],
+        null,
+        "Click Here to Download!",
+        "https://peterhoppe.itch.io/creator-colosseum"
+    ),
     new Project(
         "Diesel Thunder",
         "An online third-person shooter where players battled each other in tanks.",
         [
-            Categories.Games
+            Categories.Games,
+            Categories.Unity
         ],
         "dieselthunder.png",
         [
@@ -248,6 +245,17 @@ new Project(
         "Click Here to Download!",
         "https://drive.google.com/file/d/1hzIDzOfFkXlR7PpnCnGBWD2a0lmGIeTZ/view"
     ),
+];
+
+export {
+    Project,
+    Projects
+};
+
+/* 
+
+
+    
     new Project(
         "Inclusion",
         "A branching narrative focused on fitting in at school and pixelated art style.",

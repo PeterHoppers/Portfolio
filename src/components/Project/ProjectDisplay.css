@@ -1,27 +1,33 @@
 .project-display {
-    position: absolute;
+    display: none;
+    visibility: hidden;
+    position: relative;
     bottom: -25%;    
     left: 0;
     height: 0;
     right: 0;
-    display: grid;
     background-color: rgba(0, 0, 0, .5);
     transition: height .5s cubic-bezier(0.16, 1, 0.73, 1.04);
-    overflow: hidden;
 }
 
-.project-display.project-selected {
-    height: var(--full-height);
-    overflow: auto;
+.category-selected .project-display {
+    display: grid;
+}
+
+.focus-display .project-display {  
+    display: grid;  
     bottom: 0;
+    height: auto !important;
 }
 
-.project-display__visual {
-    margin: 1em;
+.project-display.project-selected {    
+    height: 100%;
+    top: 0;
+    visibility: visible;
+}
+
+.project-display__visual {   
     background-color: #222;
-    border: 5px solid white;
-    border-radius: 15px;
-    padding: 0em 2em 1em;
 }
 
 .project-display__close-btn {
