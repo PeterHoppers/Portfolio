@@ -49,7 +49,7 @@
     display: none;
     flex-grow: 1;
     width: calc(var(--full-width) * 3);    
-    height: calc(100% - var(--category-titles-opened-height));
+    height: calc(var(--full-height) - var(--category-titles-opened-height));
 }
 
 .category-selected:not(.category-transitioning) .category-content-holder {    
