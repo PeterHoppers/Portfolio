@@ -29,9 +29,11 @@
 }
 
 @media(max-width: 768px) {
-    .category-display {
+    .category-display.category-selected {
         overflow-x: hidden;
+        overflow-y: auto;
     }    
+    
     .category-holder {
         grid-auto-flow: row;
     }
@@ -48,7 +50,7 @@
     display: none;
     flex-grow: 1;
     width: calc(var(--full-width) * 3);    
-    height: calc(100% - var(--category-titles-opened-height));
+    min-height: calc(100% - var(--category-titles-opened-height));
 }
 
 .category-selected:not(.category-transitioning) .category-content-holder {    
