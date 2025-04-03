@@ -9,7 +9,7 @@ function ProjectContent(props) {
     const project = props.project;
     return (
         <div className="project-content">
-            <h2>{project.name}</h2>
+            <h2 className='project-content__header'>{project.name}</h2>
             <p className='project-content__description'>{project.description}</p>
             {
                 project.thumbnails && 
