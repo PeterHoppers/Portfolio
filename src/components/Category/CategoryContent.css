@@ -22,3 +22,10 @@
     opacity: 0;
     transition: none;
 }
+
+@media(max-width: 768px) {
+    .category-content__holder {
+        padding: 1em;
+        gap: 1em;
+    }
+}
