@@ -20,3 +20,15 @@
 .focus-display__holder .project-button {
     width: 450px;
 }
+
+@media(max-width: 1400px) {    
+    .focus-display__holder  .project-button {
+        width: 350px;
+    }
+}
+
+@media(max-width: 768px) {    
+    .focus-display__holder  .project-button {
+        width: 250px;
+    }
+}
