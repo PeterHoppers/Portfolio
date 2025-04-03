@@ -29,3 +29,9 @@
         width: 250px;
     }
 }
+
+@media (max-height: 836px) {
+    .project-button {
+        width: 175px;
+    }
+}
