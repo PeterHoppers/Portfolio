@@ -38,8 +38,8 @@ function CategoryDisplay() {
         setProject(selectedProject);
 
         setTimeout(() => {
-            document.getElementsByClassName("project-content__header")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
-        }, 100);
+            document.getElementsByClassName("project-content")[0].scrollIntoView({ behavior: "smooth"}); //so that it focuses on the modal
+        }, 10);
     }
 
     const clearProject = () => {
